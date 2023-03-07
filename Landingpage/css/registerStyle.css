@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #adadad;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 25px;
+    width: 300px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    box-shadow: 0 0 0.5px;
+}
+.Container h1{
+    text-align: left;
+    color: #484848;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.Container small{
+    font-size: 8px;
+    padding: 8px 10px;
+}
+.Container form input{
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-top: 15px;
+    border: 1px solid #adadad;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #484848;
+    font-size: 12px;
+}
+.Container form button{
+    width: 100%;
+    height: 40px;
+    padding: 5px 0;
+    border: none;
+    background-color:#484848;
+    font-size: 18px;
+    color: #fafafa;
+    border-radius: 5px;
+}
+
+.Container .fyp{
+    color: #484848;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 15px;
+}
+.Container .fyp a{
+    color: #8c8c8c;
+    text-decoration: none;
+}
+.Container .fyp a:hover{
+    color: #484848;
+    text-decoration: none;
+}
+
+.Container .dha{
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #484848;
+    padding-top: 15px;
+}
+
+.Container .dha p{
+    color: #484848;
+    font-size: 12px;
+}
+
+.Container button{
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    padding: 5px 0;
+    border: none;
+    background-color:#484848;
+    font-size: 18px;
+    color: #fafafa;
+    border-radius: 5px;
+}
+.Container button:hover{
+    background-color:#f7f7f7;
+    color: #484848;
+    border: 1px solid #484848;
+}
