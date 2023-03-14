@@ -136,7 +136,9 @@ html{
     .header{
         padding: 2rem;
     }
-    
+    .catalog .box-container{
+        gap: 5rem;
+    }
 }
 
 @media (max-width: 768px){
@@ -167,12 +169,17 @@ html{
         display: block;
         font-size: 2rem;
     }
-
+    .catalog .box-container{
+        gap: 10rem;
+    }
 }
 
 @media (max-width: 450px){
     html{
         font-size: 50%;
+    }
+    .catalog .box-container{
+        gap: 5rem;
     }
 }
 
@@ -189,7 +196,6 @@ html{
 
 .home .box img{
     width:100%;
-    max-width:300px;
     margin-top: 10rem;
     border-radius: 25px;
     border: 1px solid #484848;
@@ -260,22 +266,24 @@ html{
 
 .catalog .box-container{
     display: grid;
-    gap: 3rem;
+    gap: 10rem;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    padding-bottom: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     text-align: center;
 }
 
 .catalog .box{
-    border: 1px solid #484848;
+    border: 3px solid #000;
     box-shadow: 3px #353535;
     border-radius: 2.5rem;
     text-align: center;
-    padding: 1.8rem;
+    padding: 2rem;
+    width: 300px;
 }
 
 .catalog .box:hover{
-    border: 3px solid #353535;
+    border: 2px solid #acacac;
     box-shadow: none;
 }
 
@@ -294,9 +302,10 @@ html{
 }
 
 .catalog .box p{
-    font-size: 1.7rem;
-    padding-bottom: 2.5rem;
+    font-size: 1.4rem;
+    padding-bottom: 1.5rem;
     color: #484848;
+    margin-bottom: 2rem;
 }
 
 .footer {

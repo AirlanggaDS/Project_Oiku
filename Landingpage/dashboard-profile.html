@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard-cust.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>OIKU</h1>
+            <div class="search_box">
+                <input type="text" placeholder="Search">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="header-icons">
+            <i class="fas fa-bell"></i>
+            <div class="account">
+                <img src="images/562ebed9cd49b9a09baa35eddfe86b00.jpg" alt="Foto Profil">
+                <h4>Customer</h4>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <div class="side_navbar">
+                <span>Dashboard</span>
+                <a href="dashboard-cust.html">Dashboard</a>
+                <a href="#" class="active">Profile</a>
+                <a href="dashboard-catalog.html">Catalog</a>
+                <a href="dashboard-order.html">Order</a>
+                <a href="dashboard-histOrder.html">History Order</a>
+
+                <div class="links">
+                    <a href="home.html">Log Out</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main-body">
+            <form class="profil">
+                <img src="images/562ebed9cd49b9a09baa35eddfe86b00.jpg">
+                <table>
+                    <tr>
+                        <td class="label"><label>Nama</label></td>
+                        <td class="equals">:</td>
+                        <td class="input">
+                            <input class="fill" type="text" name="nama" id="nama" value="Customer" readonly><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Alamat</label></td>
+                        <td class="equals">:</td>
+                        <td class="input">
+                            <input class="fill" type="text" name="alamat" id="alamat" value="Jl. Surabaya" readonly><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Gender</label></td>
+                        <td class="equals">:</td>
+                        <td class="input">
+                            <input class="fill" type="text" name="gender" id="gender" value="Laki-Laki" readonly><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Umur</label></td>
+                        <td class="equals">:</td>
+                        <td class="input">
+                            <input class="fill" type="number" name="umur" id="umur" value="21" readonly><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Email</label></td>
+                        <td class="equals">:</td>
+                        <td class="input">
+                            <input class="fill" type="text" name="email" id="email" value="customer@gmail.com"
+                                readonly><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>Password</label></td>
+                        <td class="equals">:</td>
+                        <td class="input">
+                            <input class="fill" type="password" name="password" id="password" value="blank"
+                                readonly><br>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <section class="footer" id="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+62XXX</a>
+                <a href="#"><i class="fas fa-envelope"></i>oiku@business.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Gresik, Indonesia</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-tiktok"></i>Tik Tok</a>
+            </div>
+        </div>
+
+        <div class="credit">Created by <span>Airlangga and Rizki</span></a>
+        </div>
+    </section>
+</body>
+
+</html>
