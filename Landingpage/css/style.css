@@ -51,7 +51,7 @@ html{
 }
 
 .heading h1{
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .heading p{
@@ -77,40 +77,56 @@ html{
 }
 
 .header{
+    z-index: 1000;
     padding: 3rem 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    width: 100%;
+    height: 90px;
     top: 0;
     right: 0%;
     left: 0;
-    height: 90px;
     background-color: #fff;
-    box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, .1);
+    box-shadow: 0rem 0.5rem 1.5rem #acacac;
+}
+
+.header .logo h1{
+    cursor: pointer;
+    font-size: 40px;
 }
 
 .header .navbar a{
     margin-left: 2rem;
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color: #484848;
 }
 
 .header .navbar a:hover{
     color: #acacac;
+    transition: 0.5s;
+    font-size:2.3rem;
 }
 
-.header .navbar .right{
-    padding: .6rem 3rem;
-    font-weight: 700;
-    color: #484848;
-    text-align: right;
-    position: inherit;
+.header .navbar .acc{
+    color: #353535;
+    font-weight:800;
 }
-
-.header .navbar .right:hover{
+.header .navbar .acc:hover{
     color: #acacac;
+    font-weight:800;
+}
+
+#menu-btn{
+    padding: 1rem 1rem;
+    background-color: #eee;
+    font-size: 3rem;
+    color: #484848;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
 }
 
 @media (max-width: 991px){
@@ -124,19 +140,22 @@ html{
 }
 
 @media (max-width: 768px){
-    #all-btn{
+    #menu-btn{
         display: initial;
     }
 
     .header .navbar{
         position: absolute;
         top: 115%;
-        right: 2rem;
+        right: 1rem;
         width: 33rem;
+        border: 1px solid #000;
+        border-radius: 10px;
         background-color: #fff;
         transform: scale(0);
         transform-origin: top right;
     }
+    
 
     .header .navbar.active{
         transform: scale(1);
@@ -148,6 +167,7 @@ html{
         display: block;
         font-size: 2rem;
     }
+
 }
 
 @media (max-width: 450px){
@@ -308,7 +328,7 @@ html{
     color: #484848;
 }
 
-.footer .box-container .box a:hover {
+.footer .box-container .box a:hover i{
     padding-right:1rem;
     color: #858585;
 }
