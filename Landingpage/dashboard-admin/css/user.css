@@ -2,7 +2,8 @@
 .main-body {
     width: 100%;
     padding: 6rem;
-    margin-top: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .row {
@@ -80,8 +81,16 @@ table td {
 }
 input{
     background-color: transparent;
+    text-transform:none;
+    text-align: center;
 }
 .fill{
     font-size: 16px;
-
+    
+}
+.heading{
+    margin-top: 10rem;
+}
+.footer {
+    margin-top: 10rem;
 }

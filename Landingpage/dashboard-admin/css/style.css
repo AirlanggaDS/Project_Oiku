@@ -395,6 +395,7 @@ html{
 .footer {
     text-align: center;
     background-color: #fff;
+    bottom: 0;
 }
 .footer .box-container{
     display: grid;
