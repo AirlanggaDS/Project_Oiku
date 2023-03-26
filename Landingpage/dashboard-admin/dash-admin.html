@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>OIKU</h1>
+        </div>
+        <nav class="navbar">
+            <a href="#">Catalog</a>
+            <a href="dash-admin-listOrder.html">List Order</a>
+            <a href="dash-admin-consignor.html">Consignor</a>
+            <a href="dash-admin-customer.html">Customer</a>
+            <a href="dash-admin-transaction.html">Transaction</a>
+        </nav>
+        <div class="menu-list">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="profile-down">
+                <img src="../images/562ebed9cd49b9a09baa35eddfe86b00.jpg" onclick="toggleMenu()">
+            </div>
+        </div>
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="../images/562ebed9cd49b9a09baa35eddfe86b00.jpg">
+                    <h2>Admin</h2>
+                </div>
+                <hr>
+                <a href="dash-admin-products.html" class="sub-menu-link">
+                    <p>Products</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Take Order</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Add Consignor</p>
+                    <span>></span>
+                </a>
+                <a href="../login.html" class="sub-menu-link">
+                    <p>Log Out</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+    </header>
+    <section class="catalog">
+        <div class="heading row">
+            <h1>All Products</h1>
+            <a href="dash-admin-products.html">Manage Products</a>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <img src="../images/Easy No-bake Strawberry Cake with Biscuit Crumbles - Best of Vegan.jpg"
+                    alt="Strawberry Cake" class="product-img">
+                <h2 class="product-title">Strawberry Cake</h2>
+                <p>With Biscuit Crumbles!</p>
+                <span class="price">Rp125000</span>
+                <button type="button" class="all-btn edit-card">Edit Item</button>
+            </div>
+
+            <div class="box">
+                <img src="../images/Chocolate Truffle Tart (gluten-free, dairy-free).jpg" alt="Chocolate Truffle Tart"
+                    class="product-img">
+                <h2 class="product-title">Chocolate Truffle Tart</h2>
+                <p>Gluten Free and Dairy Free</p>
+                <span class="price">Rp130000</span>
+                <button type="button" class="all-btn edit-card">Edit Item</button>
+            </div>
+
+            <div class="box">
+                <img src="../images/Blueberry Cake.jpg" alt="Blueberry Cake" class="product-img">
+                <h2 class="product-title">Blueberry Cake</h2>
+                <p>With Raspberry</p>
+                <span class="price">Rp110000</span>
+                <button type="button" class="all-btn edit-card">Edit Item</button>
+            </div>
+
+            <div class="box">
+                <img src="../images/Matcha and Mint.jpg" alt="Matcha and Min Cake" class="product-img">
+                <h2 class="product-title">Matcha and Mint Cake</h2>
+                <p>Matcha and Mint</p>
+                <span class="price">Rp150000</span>
+                <button type="button" class="all-btn edit-card">Edit Item</button>
+            </div>
+
+        </div>
+    </section>
+    <br>
+
+    <section class="footer" id="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+62XXX</a>
+                <a href="#"><i class="fas fa-envelope"></i>oiku@business.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Gresik, Indonesia</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-tiktok"></i>Tik Tok</a>
+            </div>
+        </div>
+
+        <div class="credit">Created by <span>Airlangga and Rizki</span></a>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/transaction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>OIKU</h1>
+        </div>
+        <nav class="navbar">
+            <a href="dash-admin.html">Catalog</a>
+            <a href="dash-admin-listOrder.html">List Order</a>
+            <a href="dash-admin-consignor.html">Consignor</a>
+            <a href="dash-admin-customer.html">Customer</a>
+            <a href="#">Transaction</a>
+        </nav>
+        <div class="menu-list">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="profile-down">
+                <img src="../images/562ebed9cd49b9a09baa35eddfe86b00.jpg" onclick="toggleMenu()">
+            </div>
+        </div>
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="../images/562ebed9cd49b9a09baa35eddfe86b00.jpg">
+                    <h2>Admin</h2>
+                </div>
+                <hr>
+                <a href="dash-admin-products.html" class="sub-menu-link">
+                    <p>Products</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Take Order</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Add Consignor</p>
+                    <span>></span>
+                </a>
+                <a href="../login.html" class="sub-menu-link">
+                    <p>Log Out</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="main-body">
+        <div class="heading row">
+            <h4>Transaction</h4>
+            <a href="#">Manage Transaction</a>
+        </div>
+        <div class="small-container cartpage">
+            <table>
+                <tr>
+                    <th>Id Transaction</th>
+                    <th>Id Product</th>
+                    <th>Id Customer</th>
+                    <th>Order Time</th>
+                    <th>Detail Products</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td class="id-transaction">
+                        <h3>#0001</h3>
+                    </td>
+                    <td class="id-product">
+                        <h3>#A01</h3>
+                    </td>
+                    <td class="id-product">
+                        <h3>#001</h3>
+                    </td>
+                    <td class="order-time">
+                        <time datetime="2023-03-25 10:00">value</time>
+                    </td>
+                    <td>
+                        <div class="cartinfo">
+                            <img src="../images/Blueberry Cake.jpg" alt="Blueberry Cake">
+                            <div class="detail-product">
+                                <h2>Blueberry Cake</h2>
+                                <h3>Rp110000</h3>
+                                <small>Quantity : 1</small>
+                            </div>
+                        </div>
+                        <div class="cartinfo">
+                            <img src="../images/Matcha and Mint.jpg" alt="Matcha and Min Cake">
+                            <div class="detail-product">
+                                <h2>Matcha and Min Cake</h2>
+                                <h3>Rp150000</h3>
+                                <small>Quantity : 1</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price-product">
+                        <h3>Rp260000</h3>
+                    </td>
+                </tr>
+                <hr>
+                <tr>
+                    <td class="id-transaction">
+                        <h3>#0001</h3>
+                    </td>
+                    <td class="id-product">
+                        <h3>#A01</h3>
+                    </td>
+                    <td class="id-product">
+                        <h3>#001</h3>
+                    </td>
+                    <td class="order-time">
+                        <time datetime="2023-03-25 10:00">value</time>
+                    </td>
+                    <td>
+                        <div class="cartinfo">
+                            <img src="../images/Chocolate Truffle Tart (gluten-free, dairy-free).jpg" alt="Chocolate Truffle">
+                            <div class="detail-product">
+                                <h2>Chocolate Truffle</h2>
+                                <h3>Rp130000</h3>
+                                <small>Quantity : 2</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price-product">
+                        <h3>Rp260000</h3>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+    </section>
+    <br>
+
+    <section class="footer" id="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+62XXX</a>
+                <a href="#"><i class="fas fa-envelope"></i>oiku@business.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Gresik, Indonesia</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-tiktok"></i>Tik Tok</a>
+            </div>
+        </div>
+
+        <div class="credit">Created by <span>Airlangga and Rizki</span></a>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

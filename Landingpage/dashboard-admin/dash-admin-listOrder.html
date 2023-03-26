@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>OIKU</h1>
+        </div>
+        <nav class="navbar">
+            <a href="dash-admin.html">Catalog</a>
+            <a href="#">List Order</a>
+            <a href="dash-admin-consignor.html">Consignor</a>
+            <a href="dash-admin-customer.html">Customer</a>
+            <a href="dash-admin-transaction.html">Transaction</a>
+        </nav>
+        <div class="menu-list">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="profile-down">
+                <img src="../images/562ebed9cd49b9a09baa35eddfe86b00.jpg" onclick="toggleMenu()">
+            </div>
+        </div>
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="../images/562ebed9cd49b9a09baa35eddfe86b00.jpg">
+                    <h2>Admin</h2>
+                </div>
+                <hr>
+                <a href="dash-admin-products.html" class="sub-menu-link">
+                    <p>Products</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Take Order</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Add Consignor</p>
+                    <span>></span>
+                </a>
+                <a href="../login.html" class="sub-menu-link">
+                    <p>Log Out</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+    </header>
+    <section class="cart">
+        <div class="heading row">
+            <h4>List Order</h4>
+            <a href="dash-cust-catalog.html">Manage Order</a>
+        </div>
+        <div class="divided"></div>
+        <div class="cart-content">
+            <div class="person-order">
+                <div class="id-transaction"><h3>#0001</h3></div>
+                <div class="id-customer"><h3>#001</h3></div>
+                <div class="name-customer"><h3>Customer 1</h3></div>
+            </div>
+            <div class="cart-box">
+                <img src="../images/Easy No-bake Strawberry Cake with Biscuit Crumbles - Best of Vegan.jpg" alt=""
+                    class="cart-img">
+                <div class="detail-box">
+                    <h2 class="cart-product-title">Nama Product</h2>
+                    <h4 class="cart-product-id">ID product</h4>
+                    <div class="cart-price">Rp125000</div>
+                    <input type="number" min="1" value="1" class="cart-quantity">
+                </div>
+                <a class="remove-cart">Remove</a>
+            </div>
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rp125000</div>
+        </div>
+        <div class="divided"></div>
+        <div class="cart-content">
+            <div class="person-order">
+                <div class="id-transaction"><h3>#0002</h3></div>
+                <div class="id-customer"><h3>#002</h3></div>
+                <div class="name-customer"><h3>Customer 2</h3></div>
+            </div>
+            <div class="cart-box">
+                <img src="../images/Chocolate Truffle Tart (gluten-free, dairy-free).jpg" alt="" class="cart-img">
+                <div class="detail-box">
+                    <h2 class="cart-product-title">Nama Product</h2>
+                    <h4 class="cart-product-id">ID product</h4>
+                    <div class="cart-price">Rp130000</div>
+                    <input type="number" min="1" value="1" class="cart-quantity">
+                </div>
+                <a class="remove-cart">Remove</a>
+            </div>
+            <div class="cart-box">
+                <img src="../images/Easy No-bake Strawberry Cake with Biscuit Crumbles - Best of Vegan.jpg" alt=""
+                    class="cart-img">
+                <div class="detail-box">
+                    <h2 class="cart-product-title">Nama Product</h2>
+                    <h4 class="cart-product-id">ID product</h4>
+                    <div class="cart-price">Rp125000</div>
+                    <input type="number" min="1" value="1" class="cart-quantity">
+                </div>
+                <a class="remove-cart">Remove</a>
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Rp255000</div>
+            </div>
+        </div>
+        <div class="divided"></div>
+    </section>
+    <br>
+
+    <section class="footer" id="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+62XXX</a>
+                <a href="#"><i class="fas fa-envelope"></i>oiku@business.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Gresik, Indonesia</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-tiktok"></i>Tik Tok</a>
+            </div>
+        </div>
+
+        <div class="credit">Created by <span>Airlangga and Rizki</span></a>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

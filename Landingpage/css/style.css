@@ -74,6 +74,7 @@ html{
     color: #f7f7f7;
     background-color: #484848;
     box-shadow: none;
+    font-weight: 500;
 }
 
 .header{
@@ -107,18 +108,9 @@ html{
 .header .navbar a:hover{
     color: #acacac;
     transition: 0.5s;
-    font-size:2.3rem;
+    font-size:2rem;
+    font-weight: 500;
 }
-
-.header .navbar .acc{
-    color: #353535;
-    font-weight:800;
-}
-.header .navbar .acc:hover{
-    color: #acacac;
-    font-weight:800;
-}
-
 #menu-btn{
     padding: 1rem 1rem;
     background-color: #eee;
@@ -266,36 +258,39 @@ html{
 
 .catalog .box-container{
     display: grid;
-    gap: 10rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    padding-top: 5rem;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    padding-top: 3rem;
     padding-bottom: 5rem;
     text-align: center;
 }
 
 .catalog .box{
-    border: 3px solid #000;
-    box-shadow: 3px #353535;
     border-radius: 2.5rem;
     text-align: center;
     padding: 2rem;
-    width: 300px;
+    width: auto;
+    position: relative;
+    background-color: #eee;
 }
 
 .catalog .box:hover{
-    border: 2px solid #acacac;
-    box-shadow: none;
+    background-color: #fdfdf0;
+    border: 2px solid #484848;
+    padding: 10px;
+    transition: 0.4s;
 }
 
-.catalog .box img{
+.product-img{
     width:100%;
     height: 200px;
     max-width: 200px;
+    margin: 0.3rem;
     border-radius: 20px;
     object-fit: cover;
 }
 
-.catalog .box h3{
+.product-title{
     font-size: 2rem;
     padding: 1rem 0;
     color: #484848;
@@ -306,6 +301,16 @@ html{
     padding-bottom: 1.5rem;
     color: #484848;
     margin-bottom: 2rem;
+}
+.price{
+    font-weight: 500;
+    font-size: 16px;
+}
+.add-cart{
+    cursor: pointer;
+    margin: 10px;
+    right: 0;
+    bottom: 0;
 }
 
 .footer {

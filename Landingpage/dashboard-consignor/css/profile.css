@@ -1,0 +1,32 @@
+.main-body .profil{
+    width: 100%;
+    text-align: center;
+    padding-left: 50px;
+    background-color: #fefefe;
+    height: auto;
+    padding: 5rem;
+ }
+ 
+ .profil .label{
+     width: 30%;
+     text-align: right;
+ }
+ 
+ .profil .equals{
+     width: 10%;
+ }
+ .profil .input{
+     width: 60%;
+     text-align: left;
+ }
+ 
+ .profil td, .profil input{
+     font-size: 16px;
+ }
+ .profil .fill{
+    padding: 1rem;
+ }
+
+.prof-img{
+    margin-bottom: 3rem;
+}

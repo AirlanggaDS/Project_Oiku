@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oiku</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>OIKU</h1>
+        </div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="dash-cust-catalog.html">Catalog</a>
+            <a href="dash-cust-cart.html">Order</a>
+            <a href="dash-cust-order.html">History Order</a>
+        </nav>
+        <div class="menu-list">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="profile-down">
+                <img src="../images/562ebed9cd49b9a09baa35eddfe86b00.jpg" onclick="toggleMenu()">
+            </div>
+        </div>
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="../images/562ebed9cd49b9a09baa35eddfe86b00.jpg">
+                    <h2>Customer</h2>
+                </div>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                    <p>Profile</p>
+                    <span>></span>
+                </a>
+                <a href="../login.html" class="sub-menu-link">
+                    <p>Log Out</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+            <h1>OIKU</h1>
+            <h2>Taste the home made cakes that we provide</h2>
+            <p>Various kinds of flavors are ready for you to taste.
+                Find your own favorite dessert here!</p>
+            <a href="#catalog" class="all-btn">Get it Now</a>
+        </div>
+        <div class="box">
+            <img src="../images/various-cakes-supermarket-shelves-sale.jpg" alt="Cake shelves">
+        </div>
+    </section>
+    <br>
+
+    <section class="home">
+        <div class="content-const">
+            <h1>Interested in becoming a consignor?</h1>
+            <p>Become a consignor and let us sell your cakes, get all benefits from partnership</p>
+            <a href="registerConsignor.html" class="all-btn">Join</a>
+        </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+
+        <div class="heading">
+            <h1>Best Seller</h1>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="../images/Easy No-bake Strawberry Cake with Biscuit Crumbles - Best of Vegan.jpg"
+                    alt="Strawberry Cake" class="product-img">
+                <h2 class="product-title">Strawberry Cake</h2>
+                <p>With Biscuit Crumbles!</p>
+                <span class="price">Rp125.000</span>
+                <a href="dash-cust-catalog.html" class="all-btn add-cart">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="../images/Chocolate Truffle Tart (gluten-free, dairy-free).jpg" alt="Chocolate Truffle Tart"
+                    class="product-img">
+                <h2 class="product-title">Chocolate Truffle Tart</h2>
+                <p>Gluten Free and Dairy Free</p>
+                <span class="price">Rp130.000</span>
+                <a href="dash-cust-catalog.html" class="all-btn add-cart">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="../images/Blueberry Cake.jpg" alt="Blueberry Cake" class="product-img">
+                <h2 class="product-title">Blueberry Cake</h2>
+                <p>With Raspberry</p>
+                <span class="price">Rp110.000</span>
+                <a href="dash-cust-catalog.html" class="all-btn add-cart">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="../images/Matcha and Mint.jpg" alt="Matcha and Min Cake" class="product-img">
+                <h2 class="product-title">Matcha and Mint Cake</h2>
+                <p>Matcha and Mint</p>
+                <span class="price">Rp150.000</span>
+                <a href="dash-cust-catalog.html" class="all-btn add-cart">Order Now</a>
+            </div>
+
+        </div>
+        <br>
+        <div class="heading">
+            <h1>Catalog</h1>
+            <p>We provide various types of delicious cakes and can be your choice with the best quality.</p>
+            <br>
+            <a href="dash-cust-catalog.html" class="all-btn">See More</a>
+        </div>
+    </section>
+
+    <section class="location" id="location">
+        <div class="heading">
+            <h1>Location</h1>
+            <p>Find our store in</p>
+            <p>Jl. XXX Gresik, Jawa Timur</p>
+            <br>
+            <br>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+62XXX</a>
+                <a href="#"><i class="fas fa-envelope"></i>oiku@business.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Gresik, Indonesia</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-tiktok"></i>Tik Tok</a>
+            </div>
+        </div>
+
+        <div class="credit">Created by <span>Airlangga and Rizki</span></a>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

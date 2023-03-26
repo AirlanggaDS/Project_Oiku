@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oiku</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>OIKU</h1>
+        </div>
+        <nav class="navbar">
+            <a href="dash-cons.html">Your Product</a>
+            <a href="dash-const-transaction.html">Transaction</a>
+        </nav>
+        <div class="menu-list">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="profile-down">
+                <img src="../images/562ebed9cd49b9a09baa35eddfe86b00.jpg" onclick="toggleMenu()">
+            </div>
+        </div>
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="../images/562ebed9cd49b9a09baa35eddfe86b00.jpg">
+                    <h2>Consignor</h2>
+                </div>
+                <hr>
+                <a href="dash-const-profile.html" class="sub-menu-link">
+                    <p>Profile</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Manage Product</p>
+                    <span>></span>
+                </a>
+                <a href="../login.html" class="sub-menu-link">
+                    <p>Log Out</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+    </header>
+    <section class="main-body">
+        <div class="heading row">
+            <h4>Products</h4>
+            <a href="#">Manage Products</a>
+        </div>
+        <div class="small-container cartpage">
+            <table>
+                <tr>
+                    <th>Id Product</th>
+                    <th>Added Time</th>
+                    <th>Image Product</th>
+                    <th>Name Product</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="id-product" value="#AA001">
+                    </td>
+                    <td >
+                        <input type="datetime" class="added-time" value="2023-03-25 10:00">
+                    </td>
+                    <td>
+                        <input type="image" class="image-product" src="../images/Easy No-bake Strawberry Cake with Biscuit Crumbles - Best of Vegan.jpg">
+                    </td>
+                    <td >
+                        <input type="text" class="name-product" value="Stawberry Cake">
+                    </td>
+                    <td class="price-product">
+                        <input type="tel" class="price-product" value="Rp125000">
+                    </td>
+                </tr>
+                <hr>
+                <tr>
+                    <td>
+                        <input type="text" class="id-product" value="#AA002">
+                    </td>
+                    <td >
+                        <input type="datetime" class="added-time" value="2023-03-25 10:00">
+                    </td>
+                    <td>
+                        <input type="image" class="image-product" src="../images/Chocolate Truffle Tart (gluten-free, dairy-free).jpg">
+                    </td>
+                    <td >
+                        <input type="text" class="name-product" value="Chocolate Truffle Tart">
+                    </td>
+                    <td class="price-product">
+                        <input type="tel" class="price-product" value="Rp130000">
+                    </td>
+                </tr>
+                <hr>
+                <tr>
+                    <td>
+                        <input type="text" class="id-product" value="#AA003">
+                    </td>
+                    <td >
+                        <input type="datetime" class="added-time" value="2023-03-25 10:00">
+                    </td>
+                    <td>
+                        <input type="image" class="image-product" src="../images/Blueberry Cake.jpg">
+                    </td>
+                    <td >
+                        <input type="text" class="name-product" value="Blueberry Cake">
+                    </td>
+                    <td class="price-product">
+                        <input type="tel" class="price-product" value="Rp110000">
+                    </td>
+                </tr>
+                <hr>
+                <tr>
+                    <td>
+                        <input type="text" class="id-product" value="#AA004">
+                    </td>
+                    <td >
+                        <input type="datetime" class="added-time" value="2023-03-25 10:00">
+                    </td>
+                    <td>
+                        <input type="image" class="image-product" src="../images/Matcha and Mint.jpg">
+                    </td>
+                    <td >
+                        <input type="text" class="name-product" value="Matcha Cake">
+                    </td>
+                    <td class="price-product">
+                        <input type="tel" class="price-product" value="Rp150000">
+                    </td>
+                </tr>
+                <hr>
+            </table>
+        </div>
+    </section>
+    <br>
+
+    <section class="footer" id="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+62XXX</a>
+                <a href="#"><i class="fas fa-envelope"></i>oiku@business.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Gresik, Indonesia</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-tiktok"></i>Tik Tok</a>
+            </div>
+        </div>
+
+        <div class="credit">Created by <span>Airlangga and Rizki</span></a>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
