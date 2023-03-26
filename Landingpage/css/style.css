@@ -268,7 +268,7 @@ html{
 .catalog .box{
     border-radius: 2.5rem;
     text-align: center;
-    padding: 2rem;
+    padding: 20px;
     width: auto;
     position: relative;
     background-color: #eee;
