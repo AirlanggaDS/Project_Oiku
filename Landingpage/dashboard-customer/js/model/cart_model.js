@@ -1,7 +1,13 @@
 
 function addItem(item) {
 
-    var tempCart = JSON.parse(localStorage.getItem('cart'));
+    var tempCart = [];
+
+    var cart = JSON.parse(localStorage.getItem('cart'));
+
+    for (key in cart) {
+        tempCart.push(cart[key])
+    }
 
     if (tempCart.filter((obj) => obj.name === item.name).length === 0) {
         item.count = 1;
@@ -9,7 +15,7 @@ function addItem(item) {
     } else {
         var index = tempCart.map(function(e) {return e.name;}).indexOf(item.name);
 
-        tempCart[index].count += 1; 
+        tempCart[index].count = parseInt(tempCart[index].count) + 1; 
     }
 
     localStorage.setItem('cart', JSON.stringify(tempCart));
@@ -30,7 +36,7 @@ function modifyQty(index, qty) {
 
     localStorage.setItem('cart', JSON.stringify(cart));
 
-    location.reload();
+    location.reload()
 }
 
 function loadCart() {
