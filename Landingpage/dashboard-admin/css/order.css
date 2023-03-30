@@ -394,13 +394,24 @@ html{
     width: 3rem;
     text-align: center;
 }
-.remove-cart{
+.decision{
     font-size: 14px;
-    color: red;
     cursor: pointer;
+    text-align: center;
+}
+.remove-cart{
+    color: red;padding: 5px;
 }
 .remove-cart:hover{
-    color: rgb(95, 34, 34)
+    color: white;
+    background-color: red;
+}
+.acc-cart{
+    color: green;padding: 5px;
+}
+.acc-cart:hover{
+    color: white;
+    background-color: green;
 }
 .total{
     display: flex;

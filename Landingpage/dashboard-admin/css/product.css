@@ -83,6 +83,9 @@ table td {
     margin-right: 10px;
 }
 input{
-    font-size: 16px;
+    font-size: 14px;
     background-color: transparent;
+}
+.desc-product{
+    font-size: 12px;
 }

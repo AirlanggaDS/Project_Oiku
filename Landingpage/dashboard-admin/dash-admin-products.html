@@ -17,7 +17,7 @@
             <h1>OIKU</h1>
         </div>
         <nav class="navbar">
-            <a href="dash-admin.html">Catalog</a>
+            <a href="dash-admin.html">Products</a>
             <a href="dash-admin-listOrder.html">List Order</a>
             <a href="dash-admin-consignor.html">Consignor</a>
             <a href="dash-admin-customer.html">Customer</a>
@@ -37,14 +37,14 @@
                 </div>
                 <hr>
                 <a href="#" class="sub-menu-link">
-                    <p>Products</p>
+                    <p>Manage Products</p>
                     <span>></span>
                 </a>
-                <a href="#" class="sub-menu-link">
+                <a href="dash-admin-takeOrder.html" class="sub-menu-link">
                     <p>Take Order</p>
                     <span>></span>
                 </a>
-                <a href="#" class="sub-menu-link">
+                <a href="dash-admin-addConsignor.html" class="sub-menu-link">
                     <p>Add Consignor</p>
                     <span>></span>
                 </a>
@@ -58,7 +58,7 @@
     <section class="main-body">
         <div class="heading row">
             <h4>Products</h4>
-            <a href="#">Manage Products</a>
+            <a href="dash-admin-addProducts.html">Add Products</a>
         </div>
         <div class="small-container cartpage">
             <table>
@@ -68,7 +68,10 @@
                     <th>Added Time</th>
                     <th>Image Product</th>
                     <th>Name Product</th>
+                    <th>Description</th>
                     <th>Price</th>
+                    <th> </th>
+                    <th> </th>
                 </tr>
                 <tr>
                     <td>
@@ -86,8 +89,17 @@
                     <td >
                         <input type="text" class="name-product" value="Stawberry Cake">
                     </td>
+                    <td >
+                        <input type="text" class="desc-product" value="Stawberry Cake With Biscuit Crumbles!">
+                    </td>
                     <td class="price-product">
                         <input type="tel" class="price-product" value="Rp125000">
+                    </td>
+                    <td>
+                        <button class="crud-btn edit-user">Edit</button>
+                    </td>
+                    <td>
+                        <button class="crud-btn del-user">Delete</button>
                     </td>
                 </tr>
                 <hr>
@@ -107,8 +119,17 @@
                     <td >
                         <input type="text" class="name-product" value="Chocolate Truffle Tart">
                     </td>
+                    <td >
+                        <input type="text" class="desc-product" value="Gluten Free And Dairy Free">
+                    </td>
                     <td class="price-product">
                         <input type="tel" class="price-product" value="Rp130000">
+                    </td>
+                    <td>
+                        <button class="crud-btn edit-user">Edit</button>
+                    </td>
+                    <td>
+                        <button class="crud-btn del-user">Delete</button>
                     </td>
                 </tr>
                 <hr>
@@ -128,8 +149,17 @@
                     <td >
                         <input type="text" class="name-product" value="Blueberry Cake">
                     </td>
+                    <td >
+                        <input type="text" class="desc-product" value="Blueberry Cake With Raspberry">
+                    </td>
                     <td class="price-product">
                         <input type="tel" class="price-product" value="Rp110000">
+                    </td>
+                    <td>
+                        <button class="crud-btn edit-user">Edit</button>
+                    </td>
+                    <td>
+                        <button class="crud-btn del-user">Delete</button>
                     </td>
                 </tr>
                 <hr>
@@ -149,8 +179,17 @@
                     <td >
                         <input type="text" class="name-product" value="Matcha Cake">
                     </td>
+                    <td >
+                        <input type="text" class="desc-product" value="Matcha and Mint Cake">
+                    </td>
                     <td class="price-product">
                         <input type="tel" class="price-product" value="Rp150000">
+                    </td>
+                    <td>
+                        <button class="crud-btn edit-user">Edit</button>
+                    </td>
+                    <td>
+                        <button class="crud-btn del-user">Delete</button>
                     </td>
                 </tr>
                 <hr>

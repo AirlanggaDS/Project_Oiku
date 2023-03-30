@@ -385,6 +385,8 @@ html{
 .footer {
     text-align: center;
     background-color: #fff;
+    bottom: 0%;
+    position: relative;
 }
 .footer .box-container{
     display: grid;
@@ -430,4 +432,12 @@ html{
     color: #000000;
     cursor: pointer;
     font-weight: bold;
+}
+.crud-btn{
+    padding: 10px;
+}
+.crud-btn:hover{
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
 }

@@ -30,3 +30,13 @@
 .prof-img{
     margin-bottom: 3rem;
 }
+.edit-prof{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+.edit-prof:hover{
+    background-color: #b8b8b8;
+    color: rgb(255, 255, 255);
+}

@@ -442,3 +442,11 @@ html{
     cursor: pointer;
     font-weight: bold;
 }
+.crud-btn{
+    padding: 10px;
+}
+.crud-btn:hover{
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}

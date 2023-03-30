@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -19,7 +19,7 @@
         <nav class="navbar">
             <a href="dash-admin.html">Products</a>
             <a href="dash-admin-listOrder.html">List Order</a>
-            <a href="#">Consignor</a>
+            <a href="dash-admin-consignor.html">Consignor</a>
             <a href="dash-admin-customer.html">Customer</a>
             <a href="dash-admin-transaction.html">Transaction</a>
         </nav>
@@ -55,56 +55,18 @@
             </div>
         </div>
     </header>
-    <section class="main-body">
-        <div class="heading row">
-            <h4>Consignor</h4>
-            <a href="dash-admin-addConsignor.html">Add Consignor</a>
-        </div>
-        <div class="cartpage user-info">
-            <table>
-                <tr>
-                    <th>Id Consignor</th>
-                    <th>Register Time</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Address</th>
-                    <th>Password</th>
-                    <th> </th>
-                    <th> </th>
-                </tr>
-                <tr>
-                    <td class="fill" >
-                        <input type="text" name="Id-user" id="Id-user" value="#01AA001" readonly>
-                    </td>
-                    <td class="fill">
-                        <input type="datetime" name="register-time" id="register-time" value="2023-03-25 10:23" readonly>
-                    </td>
-                    <td class="fill">
-                        <input type="text" name="name-user" id="name-user" value="Consignor 1" readonly>
-                    </td>
-                    <td class="fill">
-                        <input type="email" name="email-user" id="email-user" value="consignor1@gmail.com" readonly>
-                    </td>
-                    <td class="fill">
-                        <input type="text" name="addres" id="address" value="Surabaya" readonly>
-                    </td>
-                    <td class="fill">
-                        <input type="password" name="pass-user" id="pass-user" value="password123" readonly>
-                    </td>
-                    <td class="fill">
-                        <button class="crud-btn edit-user">Edit</button>
-                    </td>
-                    <td class="fill">
-                        <button class="crud-btn del-user">Delete</button>
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-
-
+    <section class="Container">
+        <h1>Add Product</h1>
+    <form action="">
+        <input type="text" name="consignorId" id="consignor-id" placeholder="Consignor Id" required>
+        <input type="file" name="itemImg" id="item-img" placeholder="Item Image" required>
+        <input type="text" name="itemName" id="item-name" placeholder="Item Name" required>
+        <input type="text" name="itemDesc" id="item-desc" placeholder="Item Description" required>
+        <input type="number" name="itemPrice" id="item-price" placeholder="Item Price" required>
+        <button type="submit" class="all-btn btn-add-product">Add Product</button>
+    </form>
     </section>
-    <br>
+<br>
 
     <section class="footer" id="footer">
         <div class="box-container">
@@ -128,7 +90,6 @@
     </section>
 
     <script src="js/main.js"></script>
-    <script src="js/user.js"></script>
 </body>
 
 </html>

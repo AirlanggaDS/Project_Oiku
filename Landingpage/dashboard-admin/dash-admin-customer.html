@@ -17,7 +17,7 @@
             <h1>OIKU</h1>
         </div>
         <nav class="navbar">
-            <a href="dash-admin.html">Catalog</a>
+            <a href="dash-admin.html">Products</a>
             <a href="dash-admin-listOrder.html">List Order</a>
             <a href="dash-admin-consignor.html">Consignor</a>
             <a href="#">Customer</a>
@@ -37,14 +37,14 @@
                 </div>
                 <hr>
                 <a href="dash-admin-products.html" class="sub-menu-link">
-                    <p>Products</p>
+                    <p>Manage Products</p>
                     <span>></span>
                 </a>
-                <a href="#" class="sub-menu-link">
+                <a href="dash-admin-takeOrder.html" class="sub-menu-link">
                     <p>Take Order</p>
                     <span>></span>
                 </a>
-                <a href="#" class="sub-menu-link">
+                <a href="dash-admin-addConsignor.html" class="sub-menu-link">
                     <p>Add Consignor</p>
                     <span>></span>
                 </a>
@@ -58,7 +58,7 @@
     <section class="main-body">
         <div class="heading row">
             <h4>Customer List</h4>
-            <a href="#">Manage Customer</a>
+            <a href="dash-admin-addCustomer.html">Add Customer</a>
         </div>
         <div class="cartpage user-info">
             <table>
@@ -69,6 +69,8 @@
                     <th>Email</th>
                     <th>Address</th>
                     <th>Password</th>
+                    <th> </th>
+                    <th> </th>
                 </tr>
                 <tr>
                     <td class="fill" >
@@ -88,6 +90,12 @@
                     </td>
                     <td class="fill">
                         <input type="password" name="pass-user" id="pass-user" value="password123" readonly>
+                    </td>
+                    <td class="fill">
+                        <button class="crud-btn edit-user">Edit</button>
+                    </td>
+                    <td class="fill">
+                        <button class="crud-btn del-user">Delete</button>
                     </td>
                 </tr>
 

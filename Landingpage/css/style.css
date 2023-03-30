@@ -96,6 +96,7 @@ html{
 .header .logo h1{
     cursor: pointer;
     font-size: 40px;
+    text-transform: uppercase;
 }
 
 .header .navbar a{

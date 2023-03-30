@@ -15,12 +15,14 @@ function dummyMiddleware() {
     var email = document.getElementById('email-form').value;
     var form = document.getElementById('loginForm').action;
 
-    if (email === "rizky@gmail.com") {
-        window.location.assign('/Landingpage/dashboard-admin/dash-admin.html');
-    } else if (email === "airlangga@gmail.com") {
-        window.location.assign('/Landingpage/dashboard-consignor/dash-cons.html');
-    } else {
-        window.location.assign('/Landingpage/dashboard-customer/dash-cust.html');
+    if (email === "admin@gmail.com") {
+        window.location.assign('dashboard-admin/dash-admin.html');
+    } else if (email === "consignor@gmail.com") {
+        window.location.assign('dashboard-consignor/dash-cons.html');
+    } else if (email === "customer@gmail.com"){
+        window.location.assign('dashboard-customer/dash-cust.html');
+    } else{
+        window.location.assign('#');
     }
 
 }

@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
-    <link rel="stylesheet" href="css/cartStyle.css">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <script src="./js/model/cart_model.js"></script>
 </head>
 
-<body onload="load()">
+<body>
     <header class="header">
         <div class="logo">
             <h1>OIKU</h1>
@@ -20,7 +19,7 @@
         <nav class="navbar">
             <a href="dash-cust.html">Home</a>
             <a href="dash-cust-catalog.html">Products</a>
-            <a href="#">Order</a>
+            <a href="dash-cust-cart.html">Order</a>
             <a href="dash-cust-order.html">History Order</a>
         </nav>
         <div class="menu-list">
@@ -36,7 +35,7 @@
                     <h2>Customer</h2>
                 </div>
                 <hr>
-                <a href="dash-cust-profile.html" class="sub-menu-link">
+                <a href="#" class="sub-menu-link">
                     <p>Profile</p>
                     <span>></span>
                 </a>
@@ -46,21 +45,23 @@
                 </a>
             </div>
         </div>
-    </header>
-    <section class="cart">
-        <div class="heading row">
-            <h4>Your Order</h4>
-            <a href="dash-cust-catalog.html">Add Order</a>
-        </div>
-        <div class="cart-content" id="cart-content">
 
-        </div>
-        <div class="total">
-            <div class="total-title">Total</div>
-            <div class="total-price" id="total-price">Rp0</div>
-        </div>
-        <button type="button" class="all-btn order-btn" onclick="showCart()">Buy Now</button>
+
+    </header>
+    <section class="Container">
+        <h1>Edit Profile</h1>
+    <form action="dash-cust-profile.html">
+        <input type="text" name="customerName" id="customer-name" value="Customer" required>
+        <input type="text" name="customerAddress" id="customer-address" value="Jl. Surabaya" required>
+        <input type="text" name="customerGender" id="customer-gender" value="Laki-laki" required>
+        <input type="number" name="customerAge" id="customer-age" value="21" required>
+        <input type="text" name="customerEmail" id="customer-email" value="Consignor1@Gmail.Com" required>
+        <input type="password" name="customerPass" id="customerPass" value="Password123" required>
+        <button type="submit" class="all-btn btn-add-product">Save</button>
+    </form>
     </section>
+<br>
+
     <section class="footer" id="footer">
         <div class="box-container">
 
@@ -81,6 +82,7 @@
         <div class="credit">Created by <span>Airlangga and Rizki</span></a>
         </div>
     </section>
+
     <script src="js/main.js"></script>
 </body>
 

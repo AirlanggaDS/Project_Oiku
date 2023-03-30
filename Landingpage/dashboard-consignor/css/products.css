@@ -30,7 +30,7 @@
 table {
     background: #fff;
     padding: 1rem;
-    text-align: left;
+    text-align: center;
     border-radius: 10px;
     width: 100%;
     
@@ -40,7 +40,6 @@ table td,
 th {
     padding: 0.2rem 0.8rem;
     text-align: center;
-    
 }
 
 table th {
@@ -52,7 +51,6 @@ table td {
     color: rgb(100, 100, 100);
     border-bottom:1px solid #000;
 }
-
 
 .cartpage{
     margin: 5px auto;
@@ -83,6 +81,11 @@ table td {
     margin-right: 10px;
 }
 input{
-    font-size: 16px;
+    font-size: 14px;
     background-color: transparent;
+}
+.desc-product{
+    font-size: 12px;
+    text-align: left;
+    padding: none;
 }

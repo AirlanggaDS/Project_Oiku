@@ -1,18 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Product</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="logo">
+            <h1>OIKU</h1>
+        </div>
+        <nav class="navbar">
+            <a href="dash-cons.html">Your Product</a>
+            <a href="dash-const-transaction.html">Transaction</a>
+        </nav>
+        <div class="menu-list">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="profile-down">
+                <img src="../images/562ebed9cd49b9a09baa35eddfe86b00.jpg" onclick="toggleMenu()">
+            </div>
+        </div>
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="../images/562ebed9cd49b9a09baa35eddfe86b00.jpg">
+                    <h2>Consignor</h2>
+                </div>
+                <hr>
+                <a href="dash-const-profile.html" class="sub-menu-link">
+                    <p>Profile</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Manage Product</p>
+                    <span>></span>
+                </a>
+                <a href="../login.html" class="sub-menu-link">
+                    <p>Log Out</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+    </header>
+<body>
+    <section class="Container">
+        <h1>Add Product</h1>
     <form action="">
+        <input type="text" name="consignorId" id="consignor-id" placeholder="Consignor Id" required>
+        <input type="file" name="itemImg" id="item-img" placeholder="Item Image" required>
         <input type="text" name="itemName" id="item-name" placeholder="Item Name" required>
         <input type="text" name="itemDesc" id="item-desc" placeholder="Item Description" required>
         <input type="number" name="itemPrice" id="item-price" placeholder="Item Price" required>
+        <button type="submit" class="all-btn btn-add-product">Add Product</button>
     </form>
+    </section>
+<br>
+<section class="footer" id="footer">
+    <div class="box-container">
 
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"><i class="fas fa-phone"></i>+62XXX</a>
+            <a href="#"><i class="fas fa-envelope"></i>oiku@business.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Gresik, Indonesia</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="#"><i class="fab fa-tiktok"></i>Tik Tok</a>
+        </div>
+    </div>
+
+    <div class="credit">Created by <span>Airlangga and Rizki</span></a>
+    </div>
+</section>
+
+<script src="js/main.js"></script>
 </body>
+
 </html>
