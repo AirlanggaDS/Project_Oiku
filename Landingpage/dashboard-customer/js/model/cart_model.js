@@ -6,7 +6,7 @@ function addItem(item) {
     var cart = JSON.parse(localStorage.getItem('cart'));
 
     for (key in cart) {
-        tempCart.push(cart[key])
+        tempCart.push(cart[key]);
     }
 
     if (tempCart.filter((obj) => obj.name === item.name).length === 0) {
@@ -85,13 +85,18 @@ function loadCartTotal() {
 
     var cart = JSON.parse(localStorage.getItem('cart'));
 
+    var formatter = Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'IDR'
+    });
+
     var total = 0;
 
     for (const key in cart) {
         total = total + cart[key].price * cart[key].count;
     }
 
-    document.getElementById('total-price').innerHTML = total;
+    document.getElementById('total-price').innerHTML = formatter.format(total);
 }
 
 function load() {
