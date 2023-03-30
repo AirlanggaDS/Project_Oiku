@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/loginStyle.css">
+
+    <script src="./js/validator.js"></script>
 </head>
 <body>
     
     <div class="Container">
         <h1>Login</h1>
-        <form action="dashboard-customer/dash-cust.html">
-            <input type ="email" name="Email" placeholder="Email"><br>
-            <input type ="password" name="Password" placeholder="Password"><br>
-            <button type="submit">Log In</button>
+        <form id="loginForm" action="javascript:;" onsubmit="dummyMiddleware()">
+            <input type ="email" name="Email" placeholder="Email" id="email-form"><br>
+            <p style="color: red;" id="email-error"></p>
+            <input type ="password" name="Password" placeholder="Password" id="pass-form"><br>
+            <p style="color: red; font-size: x-small;" id="password-error"></p>
+            <button type="submit" onclick="validate()">Log In</button>
             
         </form>
         <div class="fyp">
