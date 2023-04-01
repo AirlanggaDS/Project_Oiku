@@ -89,3 +89,6 @@ input{
 .desc-product{
     font-size: 12px;
 }
+.del-prod:hover{
+    background-color: red;
+}
