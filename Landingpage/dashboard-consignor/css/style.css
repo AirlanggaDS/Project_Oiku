@@ -142,6 +142,8 @@ html{
     background:#eee;
     padding: 20px;
     margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #353535;
 }
 
 .user-info{

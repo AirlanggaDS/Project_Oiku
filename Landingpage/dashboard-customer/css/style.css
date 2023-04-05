@@ -143,6 +143,8 @@ html{
     background:#eee;
     padding: 20px;
     margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #353535;
 }
 
 .user-info{
@@ -393,6 +395,7 @@ html{
 .footer {
     text-align: center;
     background-color: #fff;
+    bottom: 0;
 }
 .footer .box-container{
     display: grid;
